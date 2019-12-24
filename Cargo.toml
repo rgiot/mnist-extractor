@@ -3,6 +3,9 @@ name = "mnist-extractor"
 version = "0.1.0"
 authors = ["aunetx <aunetx@yandex.com>"]
 edition = "2018"
+license = "MIT"
+description = "A simple utility to extract MNIST dataset."
+repository = "https://github.com/aunetx/mnist-extractor"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
