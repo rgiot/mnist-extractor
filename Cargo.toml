@@ -7,7 +7,7 @@ license = "MIT"
 description = "A simple utility to extract MNIST dataset."
 repository = "https://github.com/aunetx/mnist-extractor"
 
-# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+exclude = ["data/*", ".*"]
 
 [dependencies]
 ndarray = "*"
