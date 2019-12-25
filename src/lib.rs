@@ -131,7 +131,7 @@ fn read_deflated_labels(file: Vec<u8>) -> Result<Array2<f64>, std::io::Error> {
 fn read_deflated_images(file: Vec<u8>) -> Result<Array2<f64>, std::io::Error> {
     println!("PASSED with images file {:?}", file.len());
 
-    let file: Vec<f64> = file[16..].iter().map(|&e| e as f64).collect();
+    let file: Vec<f64> = file[16..].iter().map(|&e| e as f64 / 256.).collect();
     let images: Array2<f64> = Array::from_shape_vec((file.len() / 784, 784), file).unwrap();
     Ok(images)
 }
