@@ -27,7 +27,7 @@ mnist-extractor::clean_all_extracted();
 or
 
 ```rust
-mnist-extractor::();
+mnist-extractor::clean_everything();
 ```
 
 ## Contribution
